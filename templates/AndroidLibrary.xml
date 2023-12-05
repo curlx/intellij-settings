@@ -1,0 +1,12 @@
+<templateSet group="AndroidLibrary">
+  <template name="lib_compose_constrant_layout" value="implementation(&quot;androidx.constraintlayout:constraintlayout-compose:1.0.1&quot;)" description="Add Compose ConstrantLayout library" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lib_hilt" value="// For plugin&#10;id(&quot;com.google.dagger.hilt.android&quot;) version &quot;2.48.1&quot; apply false&#10;id(&quot;com.google.dagger.hilt.android&quot;)&#10;&#10;implementation(&quot;com.google.dagger:hilt-android:2.48.1&quot;)&#10;kapt(&quot;com.google.dagger:hilt-android-compiler:2.48.1&quot;)" description="Add Hilt library" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
