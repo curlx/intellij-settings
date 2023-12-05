@@ -1,0 +1,9 @@
+<templateSet group="AndroidCompose">
+  <template name="mod" value="modifier = Modifier.$OPTIONS$$END$," description="add the modifier property" toReformat="true" toShortenFQNames="true">
+    <variable name="OPTIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="KOTLIN" value="true" />
+      <option name="KOTLIN_COMMENT" value="false" />
+    </context>
+  </template>
+</templateSet>
