@@ -4,7 +4,12 @@
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="lib_hilt" value="// For plugin&#10;id(&quot;com.google.dagger.hilt.android&quot;) version &quot;2.48.1&quot; apply false&#10;id(&quot;com.google.dagger.hilt.android&quot;)&#10;&#10;implementation(&quot;com.google.dagger:hilt-android:2.48.1&quot;)&#10;kapt(&quot;com.google.dagger:hilt-android-compiler:2.48.1&quot;)" description="Add Hilt library" toReformat="false" toShortenFQNames="true">
+  <template name="lib_hilt" value="// For plugin&#10;id(&quot;com.google.dagger.hilt.android&quot;) version &quot;2.48.1&quot; apply false&#10;id(&quot;com.google.dagger.hilt.android&quot;)&#10;kotlin(&quot;kapt&quot;)&#10;&#10;implementation(&quot;com.google.dagger:hilt-android:2.48.1&quot;)&#10;kapt(&quot;com.google.dagger:hilt-android-compiler:2.48.1&quot;)" description="Add Hilt library" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="lib_room" value="// For plugin&#10;kotlin(&quot;kapt&quot;)&#10;&#10;// For defaultConfig&#10;javaCompileOptions {&#10;    annotationProcessorOptions {&#10;        arguments += mapOf(&#10;            &quot;room.schemaLocation&quot; to &quot;$projectDir/schemas&quot;,&#10;            &quot;room.incremental&quot; to &quot;true&quot;&#10;        )&#10;    }&#10;}&#10;&#10;implementation(&quot;androidx.room:room-runtime:2.6.1&quot;)&#10;implementation(&quot;androidx.room:room-ktx:2.6.1&quot;)&#10;kapt(&quot;androidx.room:room-compiler:2.6.1&quot;)" description="Add Room libraries" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
